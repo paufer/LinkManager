@@ -1,0 +1,42 @@
+-- v1.0
+CREATE TABLE Categories(
+    id INT AUTO_INCREMENT NOT NULL,
+    category VARCHAR(50) NOT NULL,
+    PRIMARY KEY (id)
+)
+CREATE TABLE Links(
+    id INT AUTO_INCREMENT NOT NULL,
+    category INT NOT NULL,
+    link VARCHAR(300) NOT NULL,
+    status INT(1) NOT NULL,
+    PRIMARY KEY (id),
+    FOREIGN KEY (category) REFERENCES Categories(id)
+)
+
+-- v2.0
+CREATE TABLE  Categories (
+	id INT(2) NOT NULL AUTO_INCREMENT,
+	category VARCHAR(50) NOT NULL,
+	PRIMARY KEY (id)
+) ENGINE = INNODB;
+
+CREATE TABLE Users(
+	id INT AUTO_INCREMENT NOT NULL,
+	user VARCHAR(30) NOT NULL,
+	pass VARCHAR(256) NOT NULL,
+	privileges INT(1) DEFAULT 3,
+	PRIMARY KEY (id)
+) ENGINE = INNODB;
+
+CREATE TABLE  Links (
+	id INT(5) NOT NULL AUTO_INCREMENT ,
+	category int(3) NOT NULL ,
+	link VARCHAR(400) NOT NULL ,
+	status int( 1 ) NOT NULL,
+	user int( 5 ) NOT NULL, 
+	PRIMARY KEY (id),
+	FOREIGN KEY (category) REFERENCES Categories(id),
+	FOREIGN KEY (user) REFERENCES Users (id)
+) ENGINE = INNODB;
+
+
