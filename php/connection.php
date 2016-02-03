@@ -1,10 +1,10 @@
 <?php
 //Connection settings
 function connect_db(){
-    $db_host ="insert_host";
-    $db_name = "insert_name";
-    $db_user = "insert_user";
-    $db_pass = "insert_pass";
+    $db_host ="localhost";
+    $db_name = "paufmqga_linkGestor";
+    $db_user = "paufmqga";
+    $db_pass = "LB0OydrA";
     $db_charset = "utf8";
     $db_con = "";
     

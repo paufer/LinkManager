@@ -27,7 +27,7 @@ $links      = get_links();
         <div class="row">            
             <blockquote>
                 <p>Que te hundo la vida!</p>
-                <small>Frase célebre de <cite title="Nombre Apellidos">Marcos Molero</cite></small>
+                <small>Frase célebre de <cite title="Nombre Apellidos">MM</cite></small>
             </blockquote>
             <div class="panel panel-default">
                 <div class="panel-body">
@@ -89,7 +89,7 @@ $links      = get_links();
         <div class="row">
         <hr>
         <p class="text-center">Made with <a href="http://paufernandezguardia.com"><span class="glyphicon glyphicon-heart" style="color:#f24848;"></span></a> from Tórax Hospital</p>
-        <p class="text-center"><a href="http://paufernandezguardia.com"><span class="fa fa-github" style=""></span></a></p>
+        <p class="text-center"><a href="https://github.com/paufer/LinkManager"><span class="fa fa-github" style=""></span></a></p>
         </div>
     </div>
     <!-- /container -->
