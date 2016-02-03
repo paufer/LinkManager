@@ -1,0 +1,2 @@
+# LinkManager
+Simple links manager
